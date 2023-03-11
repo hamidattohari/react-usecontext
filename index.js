@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import {Clock} from './Clock';
-import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-export default function App () {
-  return (
-    <div>
-      <h1>Hallo</h1>
-    </div>
-  )
-}
-
-render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
